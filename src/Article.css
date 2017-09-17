@@ -1,0 +1,45 @@
+.Article {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  min-height: 390px;
+  width: 100%;
+}
+
+.ArticleInfo, .ArticleMedia {
+  display: flex;
+  flex: 1;
+}
+
+.ArticleMedia {
+  background-color: purple;
+}
+
+.ArticleInfo {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ArticleInfoItem {
+  background-color: orange;
+  display: flex;
+  margin: 10px 0;
+  height: 30px;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .Article {
+    flex-direction: column;
+    margin: 0;
+    min-height: 470px;
+    height: auto;
+  }
+
+  .ArticleMedia {
+    min-height: 180px;
+  }
+}

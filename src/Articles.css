@@ -1,0 +1,12 @@
+.Articles {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .Articles {
+    padding: 0;
+  }
+}

@@ -1,0 +1,10 @@
+.Tabs {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+}
