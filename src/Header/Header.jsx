@@ -1,5 +1,7 @@
 import React from 'react';
 
+import HeaderPromo from './HeaderPromo';
+import HeaderBar from './HeaderBar';
 import './Header.css';
 
 /**
@@ -9,8 +11,11 @@ import './Header.css';
 class Header extends React.PureComponent {
   render() {
     return (
-      <div className="Header">
-      </div>
+      <header className="header">
+        <HeaderBar />
+        <HeaderPromo />
+        <div className="header__banner"></div>
+      </header>
     )
   }
 }

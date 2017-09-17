@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Header from './Header';
-import Banner from './Banner';
 import Tabs from './Tabs';
 import Articles from './Articles'
 import Footer from './Footer'
@@ -27,7 +26,6 @@ class App extends React.PureComponent {
     return (
       <div className="App">
         <Header />
-        <Banner />
         <Tabs />
         <Articles articles={this.state.articles} />
         <Footer />
