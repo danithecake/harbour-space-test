@@ -1,0 +1,62 @@
+.menu-button__title {
+  display: none;
+  vertical-align: middle;
+}
+
+.menu-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu-button__icon__bar {
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  margin-top: 5px;
+  position: relative;
+  width: 26px;
+}
+
+.menu-button__icon__bar:first-child {
+  margin-top: 0;
+}
+
+.menu-button__icon__slider {
+  background-color: #523598;
+  border: 2px solid #fff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: -2px;
+  width: 2px;
+  z-index: 1;
+}
+
+.menu-button__icon__slider--top {
+  left: 0;
+  transition: left 0.3s ease-in-out;
+}
+
+.menu-button__icon__slider--bottom {
+  right: 0;
+  transition: right 0.3s ease-in-out;
+}
+
+.menu-button__icon:hover .menu-button__icon__slider--top {
+  left: 11px;
+}
+
+.menu-button__icon:hover .menu-button__icon__slider--bottom {
+  right: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    min-width: 100px;
+  }
+
+  .menu-button__title {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}

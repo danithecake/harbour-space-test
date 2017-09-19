@@ -1,5 +1,6 @@
 import React from 'react';
 
+import PromoAnim from './PromoAnim';
 import './Promo.css';
 
 /**
@@ -10,6 +11,7 @@ class Promo extends React.PureComponent {
   render() {
     return (
       <article className="promo">
+        <PromoAnim />
         <h1 className="promo__title">
           harbour space is now in session
         </h1>

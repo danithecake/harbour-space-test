@@ -73,6 +73,24 @@
   text-decoration: none;
 }
 
+.article-enter {
+  opacity: 0.01;
+}
+
+.article-enter.article-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.article-leave {
+  opacity: 1;
+}
+
+.article-leave.article-leave-active {
+  opacity: 0.01;
+  transition: opacity 0.3s ease-in-out;
+}
+
 @media screen and (min-width: 768px) {
   .article__media,
   .article__info {

@@ -40,16 +40,18 @@ const predefinedArticles = [
 ];
 
 /** List of generated articles */
-const generatedArticles = predefinedArticles.reduce((articles, article, idx) => {
-  for (let i = 1; i < 4; i++) {
-    const supplementedArticle = {...article, author: 'Simge Toksoz'}
+const generatedArticles = [];
 
-    supplementedArticle.key = articles.length + 1;
-    articles.push(supplementedArticle);
+for (let i = 0; i < predefinedArticles.length; i++) {
+  for (let n = 0; n < 4; n++) {
+    const article = {
+      ...predefinedArticles[Math.floor(Math.random() * predefinedArticles.length)],
+      author: 'Simge Toksoz'
+    }
+
+    generatedArticles.push(article);
   }
-
-  return articles;
-}, []);
+}
 
 function filter(fn: () => {}) {
   return generatedArticles.filter(fn);

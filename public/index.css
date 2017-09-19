@@ -1,0 +1,11 @@
+@font-face {
+ font-family: "Apercu";
+ font-weight: normal;
+ src: url(fonts/apercu-regular-webfont.woff) format("woff");
+}
+
+@font-face {
+ font-family: "Apercu";
+ font-weight: bold;
+ src: url(fonts/apercu-bold-webfont.woff) format("woff");
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MenuButton from './MenuButton';
 import './Header.css';
 
 /**
@@ -14,7 +15,7 @@ class Header extends React.PureComponent {
         <span className="header__separator">&nbsp;/&nbsp;</span>
         <a href className="header__link header__link--page">news & insights</a>
         <a href className="header__link header__link--login">log in</a>
-        <a href className="header__link header__link--menu">menu</a>
+        <MenuButton />
       </header>
     )
   }
